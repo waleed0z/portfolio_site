@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Umar Ashiru Zage's personal portfolio - Python Developer and Backend Engineer" />
+  <title>Umar Ashiru Zage | Backend Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Umar Ashiru Zage</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger" id="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Backend Developer | Python Enthusiast</h2>
+      <p>Building scalable, user-focused web apps using Flask, Django, and cloud platforms like Google Cloud and Render.</p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m <strong>Umar Ashiru Zage</strong>, a backend engineer passionate about creating clean, efficient, and user-friendly web applications. I specialize in Python development with hands-on experience in Flask and Django. From building appointment scheduling systems with Google Calendar integrations to deploying chatbots that assist with mental health support, I’m always exploring how tech can create meaningful impact.
+    </p>
+    <p>
+      I’ve tackled challenges like OAuth 2.0 integration, cloud deployment on Render and Google Cloud, and building CMSs and role-based dashboards. I focus on responsive design, secure user authentication, and real-world problem-solving.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <img src="images/pexels-maksgelatin-4348589.jpg" alt="Mental Health Chatbot" />
+        <div class="project-content">
+          <h3>Mental Health Chatbot</h3>
+          <p>A conversational web app using Gemini API, offering personalized mental health support and detecting emotional tone.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="images/pexels-pixabay-162583.jpg" alt="Appointment Scheduler" />
+        <div class="project-content">
+          <h3> <a href="https://dulio-appointments.onrender.com">Appointment Scheduler</a></h3>
+          <p>Flask-based role-specific appointment system with Google OAuth and calendar integration. Designed for therapists & clients.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="images/pexels-suzyhazelwood-3601081.jpg" alt="Blog Web App" />
+        <div class="project-content">
+          <h3> <a href="https://mentblog.onrender.com">Blog Web App</a></h3>
+          <p>Full-stack web blog with user authentication, post creation, comment system, and responsive design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Python (Flask, Django)</li>
+      <li>Google Cloud Platform (App Engine, Deployment, Monitoring)</li>
+      <li>Render & Firebase Deployment</li>
+      <li>Google OAuth 2.0, Django Allauth</li>
+      <li>HTML5, CSS3, JavaScript (Responsive Design)</li>
+      <li>SQLite, PostgreSQL (Flask-SQLAlchemy)</li>
+      <li>NLTK, Gemini 2.0 API</li>
+      <li>GitHub & CI/CD Workflows</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="form-response"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Umar Ashiru Zage. All rights reserved.</p>
+  </footer>
+  <script defer src="script.js"></script>
+</body>
+</html>
