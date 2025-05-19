@@ -6,6 +6,7 @@
   <meta name="description" content="Umar Ashiru Zage's personal portfolio - Python Developer and Backend Engineer" />
   <title>Umar Ashiru Zage | Backend Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -47,32 +48,34 @@
   <section id="projects">
     <h2>Projects</h2>
     <div class="projects-grid">
-      <div class="project">
+  
+      <a href="https://your-chatbot-link.com" target="_blank" class="project">
         <img src="images/pexels-maksgelatin-4348589.jpg" alt="Mental Health Chatbot" />
         <div class="project-content">
           <h3>Mental Health Chatbot</h3>
           <p>A conversational web app using Gemini API, offering personalized mental health support and detecting emotional tone.</p>
         </div>
-      </div>
-
-      <div class="project">
+      </a>
+  
+      <a href="https://dulio-appointments.onrender.com" target="_blank" class="project">
         <img src="images/pexels-pixabay-162583.jpg" alt="Appointment Scheduler" />
         <div class="project-content">
-          <h3> <a href="https://dulio-appointments.onrender.com">Appointment Scheduler</a></h3>
+          <h3>Appointment Scheduler</h3>
           <p>Flask-based role-specific appointment system with Google OAuth and calendar integration. Designed for therapists & clients.</p>
         </div>
-      </div>
-
-      <div class="project">
+      </a>
+  
+      <a href="https://mentblog.onrender.com" target="_blank" class="project">
         <img src="images/pexels-suzyhazelwood-3601081.jpg" alt="Blog Web App" />
         <div class="project-content">
-          <h3> <a href="https://mentblog.onrender.com">Blog Web App</a></h3>
+          <h3>Blog Web App</h3>
           <p>Full-stack web blog with user authentication, post creation, comment system, and responsive design.</p>
         </div>
-      </div>
+      </a>
+  
     </div>
   </section>
-
+  
   <section id="skills">
     <h2>Skills</h2>
     <ul class="skills-list">
@@ -90,17 +93,27 @@
   <section id="contact">
     <h2>Contact Me</h2>
     <form id="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="user_name" placeholder="Your Name" required />
+      <input type="email" name="user_email" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
+      <p id="form-response"></p>
     </form>
-    <p id="form-response"></p>
   </section>
-
+  <div class="socials">
+    <h3>Connect with me</h3>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/_waleed_omar" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/+2348177593757" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/in/umar-ashiru" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/WaleedAshi39247" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    </div>
+  </div>  
   <footer>
     <p>&copy; 2025 Umar Ashiru Zage. All rights reserved.</p>
   </footer>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>emailjs.init("oMl0SxMcf-6LL_UkM");</script>
   <script defer src="script.js"></script>
-</body>
 </html>
+</body>

@@ -126,10 +126,12 @@
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    text-decoration: none;
   }
   
   .project:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
   }
   
   .project img {
@@ -138,22 +140,22 @@
     object-fit: cover;
   }
   
-  .project-content {
+ .project .project-content {
     padding: 1rem;
   }
   
-  .project-content h3 {
+ .project .project-content h3 {
     font-weight: 200;
     margin-top: 0;
-    color: #92a8d9;
+    color: #678bc4;
   }
   
-  .project-content h3 a {                
+ .project .project-content h3 a {                
     text-decoration: none;
-    color: #92a8d9;
   }
-  .project-content p {
+ .project .project-content p {
     margin-bottom: 0.5rem;
+    color: #000000;
   }
   
   .skills-list {
@@ -214,6 +216,34 @@
     text-align: center;
     margin-top: 1rem;
     font-weight: 500;
+  }
+  .socials {
+    text-align: center;
+    margin-top: 0rem;
+  }
+  
+  .socials h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #1e293b;
+    font-weight: 200;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .social-icons a {
+    font-size: 1.8rem;
+    color: #1e293b;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #2563eb;
+    transform: scale(1.2);
   }
   
   footer {
