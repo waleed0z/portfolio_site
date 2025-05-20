@@ -8,16 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.classList.toggle('active');
   });
 
-  const form = document.getElementById('contact-form');
-  const responseMsg = document.getElementById('form-response');
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    responseMsg.textContent = 'Thank you! Your message has been sent.';
-    responseMsg.style.color = 'green';
-    form.reset();
-  });
-
   // Smooth scroll for internal links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -56,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    emailjs.sendForm("service_vq2ywyo", "service_vq2ywyo", form)
+    emailjs.sendForm("service_vq2ywyo", "template_ieuxtdo", form)
       .then(() => {
         response.style.color = "green";
         response.textContent = "Message sent successfully!";
